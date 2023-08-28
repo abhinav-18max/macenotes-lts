@@ -67,7 +67,7 @@ We will also be working on adding more features to this project.
 ## Setup Guidelines
 Clone the repository -
 ```
-git clone https://github.com/GDSC-MACE/MaceNotes
+git clone https://github.com/abhinav-18max/macenotes-lts
 ```
 
 ### In the project directory, you can run:
