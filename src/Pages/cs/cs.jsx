@@ -103,7 +103,7 @@ function Cs() {
             </Col> 
           </Row>
           <Row>
-          <DocGetter department='CS' module={mod} semester={sem} subject={sub} />
+          <DocGetter module={mod} subject={sub} />
           </Row>
         </Container>
        
