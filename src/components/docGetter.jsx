@@ -19,6 +19,7 @@ function DocGetter(props) {
         const length = res.data.length;
         for (var i = 0; i < length; i++) {
           const details = res.data[i];
+
           if (details.subject == sub && details.module == mod) {
             const x = document.createElement("a");
             x.style.textDecoration = "none";
@@ -26,7 +27,7 @@ function DocGetter(props) {
             var lin = details.file;
             x.setAttribute("href", lin);
             x.setAttribute("class", "link");
-            x.innerHTML = "GET NOTES FOR " + mod + " OF " + sub;
+            x.innerHTML = "NOTE " + i + " : " + mod + " OF " + sub;
             document.getElementById("doclinks").appendChild(x);
           }
         }
@@ -34,12 +35,19 @@ function DocGetter(props) {
   }
   return (
     <div className="linkContainer">
-      {/* <button className='sems'  onClick={getDocs}>get notes</button><br></br><br></br> */}
-      <div id="doclinks" className="linkbox"></div>
-      <div onClick={props.closer} className="close-btn">
-        <img src="/close.svg" alt="" />
+      <div className="header">
+        <div className="texts">
+          <h3>NOTES</h3>
+        </div>
+        <div onClick={props.closer} className="close-btn">
+          <img src="/close.svg" alt="" />
+        </div>
       </div>
+      <div id="doclinks" className="linkbox"></div>
     </div>
   );
 }
 export default DocGetter;
+{
+  /* <button className='sems'  onClick={getDocs}>get notes</button><br></br><br></br> */
+}

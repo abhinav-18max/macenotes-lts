@@ -1,19 +1,4 @@
-#doclinks
-{
-    background-color:#547CF5;
-    text-decoration: none;
-    color: white;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 50px;
-    width: fit-content;
-}
-.linkContainer
-{
-    min-height: 300px;
-    display:flexbox;   
-}
+
 .mods
 {
     text-decoration: none;
