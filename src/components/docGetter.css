@@ -1,0 +1,20 @@
+.linkContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.25em;
+}
+
+.linkbox{
+    border-radius: 5px;
+}
+
+.link{
+    padding: 1em;
+}
+
+.close-btn{
+    padding: 0.8em;
+    background: rgb(209, 64, 64);
+    border-radius: 5px;
+}
