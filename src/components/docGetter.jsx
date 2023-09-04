@@ -7,6 +7,7 @@ function DocGetter(props)
   {
      sub=props.subject;
      mod=props.module;
+     getDocs();
   });
    function getDocs()
   {
@@ -33,7 +34,8 @@ function DocGetter(props)
   }
     return(
     <div className='linkContainer'>
-     <button className='sems'  onClick={getDocs}>get notes</button><br></br><br></br>
+    <button onClick={props.closer}>close</button>
+     {/* <button className='sems'  onClick={getDocs}>get notes</button><br></br><br></br> */}
       <div id='doclinks'></div>
     </div>
    )

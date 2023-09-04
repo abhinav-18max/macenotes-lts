@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { Button, Card, Col, Container, Row } from 'react-bootstrap';
 import './cs.css'
 import axios from 'axios';
-import docGetter from '../../components/docGetter';
 import DocGetter from '../../components/docGetter';
 
 function Cs() {
@@ -13,6 +12,12 @@ function Cs() {
   const [sem,setsem]=useState('semester 3');
   const [sub,setsub]=useState('LS');
   const [mod,setmod]=useState('MODULE 1');
+  const [caller,callerUp]=useState(false);
+  function close()
+  {
+    callerUp(false);
+    console.log('hello');
+  }
   
   useEffect(()=>{
     const x=[firstsub,secondsub,thirdsub,fourthsub];
@@ -73,15 +78,15 @@ function Cs() {
              <Card.Header><h5>{firstsub}</h5></Card.Header>
              <Card.Body><ul>
              <button className='mods' onClick={()=>{setmod('MODULE 1');
-             setsub(firstsub);}}>MODULE 1</button>
-             </ul><ul><button onClick={()=>{setmod('MODULE 2');
+             setsub(firstsub); callerUp(true)}}>MODULE 1</button>
+             </ul><ul><button onClick={()=>{setmod('MODULE 2'); callerUp(true)
              setsub(firstsub);}} className='mods'>MODULE 2</button>
              </ul>
-             <ul> <button className='mods' onClick={()=>{setmod('MODULE 3');
+             <ul> <button className='mods' onClick={()=>{setmod('MODULE 3'); callerUp(true)
               setsub(firstsub);}}>MODULE 3</button>
               </ul><ul> <button className='mods' onClick={()=>{setmod('MODULE 4');
               setsub(firstsub);}}>MODULE 4</button>
-              </ul><ul><button className='mods' onClick={()=>{setmod('MODULE 5');
+              </ul><ul><button className='mods' onClick={()=>{setmod('MODULE 5'); callerUp(true)
               setsub(firstsub);}}>MODULE 5</button></ul></Card.Body>
             </Card>
             </Col>
@@ -103,7 +108,7 @@ function Cs() {
             </Col> 
           </Row>
           <Row>
-          <DocGetter module={mod} subject={sub} />
+          {caller &&<DocGetter module={mod} subject={sub} closer={close} />}
           </Row>
         </Container>
        
