@@ -9,7 +9,7 @@ function Cs() {
   const [secondsub, setsecondsub] = useState("LAAC");
   const [thirdsub, setthirdsub] = useState("Chemistry");
   const [fourthsub, setfourthsub] = useState("");
-  const [sem, setsem] = useState("semester 3");
+ 
   const [sub, setsub] = useState("LS");
   const [mod, setmod] = useState("MODULE 1");
   const [caller, callerUp] = useState(false);
@@ -41,7 +41,8 @@ function Cs() {
               setsecondsub("LAAC");
               setthirdsub("Chemistry");
               setfourthsub("");
-              setsem("semester 3");
+              callerUp(false);
+              
               document.getElementById("sem4").style.backgroundColor =
                 "rgba(0, 0, 0, 0)";
               document.getElementById("sem4").style.color = "#547CF5";
@@ -59,7 +60,8 @@ function Cs() {
               setsecondsub("P Com");
               setthirdsub("Physics");
               setfourthsub("fourth sub");
-              setsem("semester 4");
+             
+              callerUp(false);
               document.getElementById("sem3").style.backgroundColor =
                 "rgba(0, 0, 0, 0)";
               document.getElementById("sem3").style.color = "#547CF5";
@@ -179,6 +181,7 @@ function Cs() {
               </Card>
             </Col>
           </Row>
+          <br></br><br></br>
           <Row>
             {caller && <DocGetter module={mod} subject={sub} closer={close} />}
           </Row>
