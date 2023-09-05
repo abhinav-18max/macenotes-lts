@@ -2,52 +2,160 @@ import { useState, useEffect } from "react";
 import "./EEE.css";
 
 let sem_3_sub = [
-  { name: "eee", modules: ["module1", "m2", "m3", "m4", "m5", "m6"] },
-  { name: "sfdfub2", modules: ["module1", "m2", "m3", "m4", "m5", "m6"] },
-  { name: "subd3", modules: ["module1", "m2", "m3", "m4", "m5", "m6"] },
-  { name: "subsdfsdf4", modules: ["module1", "m2", "m3", "m4", "m5", "m6"] },
-  { name: "subdsvsd5", modules: ["module1", "m2", "m3", "m4", "m5", "m6"] },
-  { name: "subdvdv6", modules: ["module1", "m2", "m3", "m4", "m5", "m6"] },
+  {
+    name: "eee",
+    modules: ["module1", "module2", "module3", "module4", "module5", "module6"],
+  },
+  {
+    name: "sfdfub2",
+    modules: ["module1", "module2", "module3", "module4", "module5", "module6"],
+  },
+  {
+    name: "subd3",
+    modules: ["module1", "module2", "module3", "module4", "module5", "module6"],
+  },
+  {
+    name: "subsdfsdf4",
+    modules: ["module1", "module2", "module3", "module4", "module5", "module6"],
+  },
+  {
+    name: "subdsvsd5",
+    modules: ["module1", "module2", "module3", "module4", "module5", "module6"],
+  },
+  {
+    name: "subdvdv6",
+    modules: ["module1", "module2", "module3", "module4", "module5", "module6"],
+  },
 ];
 let sem_4_sub = [
-  { name: "fff", modules: ["module1", "m2", "m3", "m4", "m5", "m6"] },
-  { name: "sub2", modules: ["module1", "m2", "m3", "m4", "m5", "m6"] },
-  { name: "sub3", modules: ["module1", "m2", "m3", "m4", "m5", "m6"] },
-  { name: "dvdvsub4", modules: ["module1", "m2", "m3", "m4", "m5", "m6"] },
-  { name: "subvd5", modules: ["module1", "m2", "m3", "m4", "m5", "m6"] },
-  { name: "sub6", modules: ["module1", "m2", "m3", "m4", "m5", "m6"] },
+  {
+    name: "fff",
+    modules: ["module1", "module2", "module3", "module4", "module5", "module6"],
+  },
+  {
+    name: "sub2",
+    modules: ["module1", "module2", "module3", "module4", "module5", "module6"],
+  },
+  {
+    name: "sub3",
+    modules: ["module1", "module2", "module3", "module4", "module5", "module6"],
+  },
+  {
+    name: "dvdvsub4",
+    modules: ["module1", "module2", "module3", "module4", "module5", "module6"],
+  },
+  {
+    name: "subvd5",
+    modules: ["module1", "module2", "module3", "module4", "module5", "module6"],
+  },
+  {
+    name: "sub6",
+    modules: ["module1", "module2", "module3", "module4", "module5", "module6"],
+  },
 ];
 let sem_5_sub = [
-  { name: "ggg", modules: ["module1", "m2", "m3", "m4", "m5", "m6"] },
-  { name: "subdd2", modules: ["module1", "m2", "m3", "m4", "m5", "m6"] },
-  { name: "sub3", modules: ["module1", "m2", "m3", "m4", "m5", "m6"] },
-  { name: "sub4", modules: ["module1", "m2", "m3", "m4", "m5", "m6"] },
-  { name: "sub5", modules: ["module1", "m2", "m3", "m4", "m5", "m6"] },
-  { name: "sub6", modules: ["module1", "m2", "m3", "m4", "m5", "m6"] },
+  {
+    name: "ggg",
+    modules: ["module1", "module2", "module3", "module4", "module5", "module6"],
+  },
+  {
+    name: "subdd2",
+    modules: ["module1", "module2", "module3", "module4", "module5", "module6"],
+  },
+  {
+    name: "sub3",
+    modules: ["module1", "module2", "module3", "module4", "module5", "module6"],
+  },
+  {
+    name: "sub4",
+    modules: ["module1", "module2", "module3", "module4", "module5", "module6"],
+  },
+  {
+    name: "sub5",
+    modules: ["module1", "module2", "module3", "module4", "module5", "module6"],
+  },
+  {
+    name: "sub6",
+    modules: ["module1", "module2", "module3", "module4", "module5", "module6"],
+  },
 ];
 let sem_6_sub = [
-  { name: "hhh", modules: ["module1", "m2", "m3", "m4", "m5", "m6"] },
-  { name: "suddb2", modules: ["module1", "m2", "m3", "m4", "m5", "m6"] },
-  { name: "sub3", modules: ["module1", "m2", "m3", "m4", "m5", "m6"] },
-  { name: "subdd4", modules: ["module1", "m2", "m3", "m4", "m5", "m6"] },
-  { name: "sub5", modules: ["module1", "m2", "m3", "m4", "m5", "m6"] },
-  { name: "suddb6", modules: ["module1", "m2", "m3", "m4", "m5", "m6"] },
+  {
+    name: "hhh",
+    modules: ["module1", "module2", "module3", "module4", "module5", "module6"],
+  },
+  {
+    name: "suddb2",
+    modules: ["module1", "module2", "module3", "module4", "module5", "module6"],
+  },
+  {
+    name: "sub3",
+    modules: ["module1", "module2", "module3", "module4", "module5", "module6"],
+  },
+  {
+    name: "subdd4",
+    modules: ["module1", "module2", "module3", "module4", "module5", "module6"],
+  },
+  {
+    name: "sub5",
+    modules: ["module1", "module2", "module3", "module4", "module5", "module6"],
+  },
+  {
+    name: "suddb6",
+    modules: ["module1", "module2", "module3", "module4", "module5", "module6"],
+  },
 ];
 let sem_7_sub = [
-  { name: "iii", modules: ["module1", "m2", "m3", "m4", "m5", "m6"] },
-  { name: "sub2", modules: ["module1", "m2", "m3", "m4", "m5", "m6"] },
-  { name: "subdd3", modules: ["module1", "m2", "m3", "m4", "m5", "m6"] },
-  { name: "sub4", modules: ["module1", "m2", "m3", "m4", "m5", "m6"] },
-  { name: "sub5", modules: ["module1", "m2", "m3", "m4", "m5", "m6"] },
-  { name: "sub6", modules: ["module1", "m2", "m3", "m4", "m5", "m6"] },
+  {
+    name: "iii",
+    modules: ["module1", "module2", "module3", "module4", "module5", "module6"],
+  },
+  {
+    name: "sub2",
+    modules: ["module1", "module2", "module3", "module4", "module5", "module6"],
+  },
+  {
+    name: "sub3",
+    modules: ["module1", "module2", "module3", "module4", "module5", "module6"],
+  },
+  {
+    name: "sub4",
+    modules: ["module1", "module2", "module3", "module4", "module5", "module6"],
+  },
+  {
+    name: "sub5",
+    modules: ["module1", "module2", "module3", "module4", "module5", "module6"],
+  },
+  {
+    name: "sub6",
+    modules: ["module1", "module2", "module3", "module4", "module5", "module6"],
+  },
 ];
 let sem_8_sub = [
-  { name: "jjj", modules: ["module1", "m2", "m3", "m4", "m5", "m6"] },
-  { name: "sub2", modules: ["module1", "m2", "m3", "m4", "m5", "m6"] },
-  { name: "sub3", modules: ["module1", "m2", "m3", "m4", "m5", "m6"] },
-  { name: "sub4", modules: ["module1", "m2", "m3", "m4", "m5", "m6"] },
-  { name: "sub5", modules: ["module1", "m2", "m3", "m4", "m5", "m6"] },
-  { name: "sub6", modules: ["module1", "m2", "m3", "m4", "m5", "m6"] },
+  {
+    name: "jjj",
+    modules: ["module1", "module2", "module3", "module4", "module5", "module6"],
+  },
+  {
+    name: "sub2",
+    modules: ["module1", "module2", "module3", "module4", "module5", "module6"],
+  },
+  {
+    name: "sub3",
+    modules: ["module1", "module2", "module3", "module4", "module5", "module6"],
+  },
+  {
+    name: "sub4",
+    modules: ["module1", "module2", "module3", "module4", "module5", "module6"],
+  },
+  {
+    name: "sub5",
+    modules: ["module1", "module2", "module3", "module4", "module5", "module6"],
+  },
+  {
+    name: "sub6",
+    modules: ["module1", "module2", "module3", "module4", "module5", "module6"],
+  },
 ];
 
 export default function EEE() {
