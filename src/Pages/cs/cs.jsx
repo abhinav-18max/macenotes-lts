@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { Button, Card, Col, Container, Row } from "react-bootstrap";
+import {Card, Col, Container, Row } from "react-bootstrap";
 import "./cs.css";
-import axios from "axios";
 import DocGetter from "../../components/docGetter";
 
 function Cs() {
