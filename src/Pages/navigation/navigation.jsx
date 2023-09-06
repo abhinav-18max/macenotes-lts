@@ -3,6 +3,7 @@ import "./navigation.css";
 import { NavLink } from "react-router-dom";
 
 import Cs from "../cs/cs";
+import EEE from "../EEE/EEE";
 
 function Navigation() {
   const [nav, setNav] = useState(true);
@@ -28,7 +29,11 @@ function Navigation() {
             <NavLink to="/cs">Computer Science</NavLink>
           </li>
           <li className="my-2">Electronics & Communication</li>
-          <li className="my-2">Electrical & Electronics</li>
+          <li className="my-2">
+            <li className="my-2">
+              <NavLink to="/EEE">Electrical and Electronics</NavLink>
+            </li>
+          </li>
           <li className="my-2">Mechanical</li>
           <li className="my-2">Civil</li>
           <li className="my-2">First Year</li>

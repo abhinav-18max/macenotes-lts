@@ -3,7 +3,7 @@ import axios from "axios";
 
 import "./docGetter.css";
 function DocGetter(props) {
-  var dep, sub, mod, sem;
+  var sub, mod;
   useEffect(() => {
     sub = props.subject;
     mod = props.module;
@@ -17,6 +17,7 @@ function DocGetter(props) {
       .get("https://sheet.best/api/sheets/79c1bd6f-f522-42b2-99fe-2b7adc66c3a4")
       .then((res) => {
         const length = res.data.length;
+        var r=1
         for (var i = 0; i < length; i++) {
           const details = res.data[i];
 
@@ -27,10 +28,11 @@ function DocGetter(props) {
             var lin = details.file;
             x.setAttribute("href", lin);
             x.setAttribute("class", "link");
-            x.innerHTML = "NOTE " + i + " : " + mod + " OF " + sub;
+            x.innerHTML = "NOTE " + (r++) + " : " + mod + " OF " + sub;
             document.getElementById("doclinks").appendChild(x);
           }
         }
+        document.getElementById("doclinks").scrollIntoView({behavior:'smooth'});
       });
   }
   return (

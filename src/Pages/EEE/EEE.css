@@ -1,0 +1,69 @@
+.section{
+    padding:  2rem 4rem;
+    color:white;
+}
+
+h2{
+    font-size: clamp(1rem,3vw,4rem);
+    color: #547CF5;
+    padding-left: 0.25em;
+    
+}
+
+.sem-nav{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .25em;
+    padding: 0;
+
+}
+
+.btn-sem{
+    min-width: 9rem;
+    background: #2c2b2b;
+    padding: .32em;
+    border-radius: 100vw;
+    border: solid 2px #547CF5;
+    color: #547CF5;
+    font-weight: bolder;
+    
+}
+
+.active{
+    color: white;
+    background: #547CF5;
+}
+
+
+.semester{
+  padding: 1rem;
+}
+
+.cardHolder{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    padding-left: 1.5em;
+}
+
+.card{
+    display: flex;
+    min-width: 300px;
+    padding: 1em;
+    background: #2c2b2b;
+
+    & h4{
+        color: #547CF5;
+    }
+}
+
+.modules{
+    list-style: none;
+    padding: 0em 1em;
+    color: #eee;
+}
+
+.module-item{
+    padding: .325em 0em;
+}

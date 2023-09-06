@@ -6,6 +6,11 @@
     color: white;
     border: none;
 }
+.mods:hover
+{
+    box-shadow: -4px 0px 4px 0px rgba(255, 255, 255, 0.25), 4px 0px 4px 0px rgba(255, 255, 255, 0.25), 0px -4px 4px 0px rgba(255, 255, 255, 0.25), 0px 4px 4px 0px rgba(255, 255, 255, 0.25);
+    border: solid white 1.7px;
+}
 .text {
     position: absolute;
     margin-left: 50px;
