@@ -194,6 +194,7 @@ export default function EEE() {
                 onClick={() => {
                   setSem(semester);
                   setsubjects(eval("sem_" + semester + "_sub"));
+                  setCaller(false);
                   document.getElementById("sem" + semester).style.color =
                     "white";
                   document.getElementById(
