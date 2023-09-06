@@ -1,10 +1,18 @@
 import { useState, useEffect } from "react";
 import "./EEE.css";
+import DocGetter from "../../components/docGetter";
 
 let sem_3_sub = [
   {
-    name: "eee",
-    modules: ["module1", "module2", "module3", "module4", "module5", "module6"],
+    name: "LS",
+    modules: [
+      "MODULE 1",
+      "module2",
+      "module3",
+      "module4",
+      "module5",
+      "module6",
+    ],
   },
   {
     name: "sfdfub2",
@@ -161,7 +169,15 @@ let sem_8_sub = [
 export default function EEE() {
   let semesters = [3, 4, 5, 6, 7, 8];
   const [sem, setSem] = useState(3);
+  const [sub, setSub] = useState("");
+  const [mod, setMod] = useState("");
   const [subjects, setsubjects] = useState(sem_3_sub);
+  const [caller, setCaller] = useState(false);
+
+  function close() {
+    setCaller(false);
+  }
+
   return (
     <section className="section">
       <div>
@@ -208,12 +224,24 @@ export default function EEE() {
             <div>
               <ul className="modules">
                 {subject.modules.map((module) => (
-                  <li className="module-item">{module}</li>
+                  <li
+                    className="module-item"
+                    onClick={() => {
+                      setMod(module);
+                      setSub(subject.name);
+                      setCaller(true);
+                    }}
+                  >
+                    {module}
+                  </li>
                 ))}
               </ul>
             </div>
           </div>
         ))}
+      </div>
+      <div className="note-display">
+        {caller && <DocGetter module={mod} subject={sub} closer={close} />}
       </div>
     </section>
   );
