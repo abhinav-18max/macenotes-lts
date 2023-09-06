@@ -8,8 +8,8 @@
 }
 .mods:hover
 {
-    box-shadow: -4px 0px 4px 0px rgba(255, 255, 255, 0.25), 4px 0px 4px 0px rgba(255, 255, 255, 0.25), 0px -4px 4px 0px rgba(255, 255, 255, 0.25), 0px 4px 4px 0px rgba(255, 255, 255, 0.25);
-    border: solid white 1.7px;
+    /* box-shadow: -4px 0px 4px 0px rgba(255, 255, 255, 0.25), 4px 0px 4px 0px rgba(255, 255, 255, 0.25), 0px -4px 4px 0px rgba(255, 255, 255, 0.25), 0px 4px 4px 0px rgba(255, 255, 255, 0.25); */
+    border-bottom: solid  #547CF5 2px;
 }
 .text {
     position: absolute;
@@ -38,11 +38,11 @@
     color: #547CF5;
     background-color: rgba(0, 0, 0, 0);
 } 
- .sems:hover
+ /* .sems:hover
 {
     background-color:#547CF5 ;
     color: rgb(0, 0, 0);
-} 
+}  */
 
 .sec
 {
@@ -53,7 +53,7 @@
 .contents
 {
     color: white;
-    width: 50%;
+    width: 55%;
     background-color: rgb(26, 26, 26);
     border-right:solid 6px blue;
     margin-top: 30px;
@@ -66,6 +66,6 @@ height: 300px;
 {
     .sec{
         position: relative;
-    top:550px;
+    top:500px;
     }
 }
