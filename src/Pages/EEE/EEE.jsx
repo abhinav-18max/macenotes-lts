@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./EEE.css";
+import Navigation from "../../components/navigation/navigation";
 import DocGetter from "../../components/docGetter";
 
 let sem_3_sub = [
@@ -193,6 +194,7 @@ export default function EEE() {
                 onClick={() => {
                   setSem(semester);
                   setsubjects(eval("sem_" + semester + "_sub"));
+                  setCaller(false);
                   document.getElementById("sem" + semester).style.color =
                     "white";
                   document.getElementById(

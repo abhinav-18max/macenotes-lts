@@ -30,6 +30,11 @@ h2{
     
 }
 
+#sem3{
+    color:#eee;
+    background:#547CF5;
+}
+
 .active{
     color: white;
     background: #547CF5;
@@ -66,6 +71,7 @@ h2{
 
 .module-item{
     padding: .325em 0em;
+    color: #eee;
 }
 
 .note-display{
