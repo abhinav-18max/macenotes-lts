@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./home.css";
-import "../navigation/navigation.css";
 import { NavLink } from "react-router-dom";
-import Navigation from "../navigation/navigation";
-import Social from "../social/social";
-import Cs from "../cs/cs";
+import Navigation from "../../components/navigation/navigation";
+import Social from "../../components/social/social";
 
 function Home() {
   const activeSide = () => {

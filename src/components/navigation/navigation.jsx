@@ -1,10 +1,6 @@
 import React, { useState } from "react";
 import "./navigation.css";
 import { NavLink } from "react-router-dom";
-
-import Cs from "../cs/cs";
-import EEE from "../EEE/EEE";
-
 function Navigation() {
   const [nav, setNav] = useState(true);
   const nav_active = () => {
