@@ -11,15 +11,17 @@
     top: 0;
     background: var(--Secondary-Color, #547CF5);
     transition: all 1s ease-in-out;
+    z-index: 98;
 }
-.active{
-    left: 0vw;
+.active-nav-bar{
     width: 27vw;
     height: 90vh;
     position: fixed;
     top: 0;
+    left: 0vw;
     background: var(--Secondary-Color, #547CF5);
     transition: all 1s ease-in-out;
+    z-index: 98;
 }
 .side-ver-bar{
     height: 90vh;
@@ -35,10 +37,11 @@
     padding: 0;
     margin: 0;
     position: absolute;
+    color: #13141C;
     font-size: 30px;
     font-weight: 500;
     cursor: pointer;
-    z-index: 3;
+    z-index: 100;
 }
 .side-bar{
     height: 100%;
@@ -48,6 +51,7 @@
     justify-content: center;
     overflow-x: hidden;
     overflow-y: hidden;
+    z-index: 100;
 }
 ul li{
     color: var(--Primary, #13141C);
@@ -57,19 +61,19 @@ ul li{
     font-weight: 600;
     line-height: normal;
     list-style: none;
+    z-index: 100;
+    width: 100%;
+    height: fit-content;
 }
-ul li a{
+ul li a, .active{
     color: var(--Primary, #13141C);
     text-decoration: none;
+    z-index: 100;
 }
 
 
 
 @media screen and (max-width: 768px){
-    ul li{
-        font-size: 20px;
-        font-weight: 500;
-    }
     .nav-ver-bar{
         font-size: 25px;
         font-weight: 400;
@@ -78,7 +82,7 @@ ul li a{
         width: 50vw;
         left: -47vw;
     }
-    .active{
+    .active-nav-bar{
         width: 50vw;
     }
     .side-ver-bar{
@@ -87,7 +91,7 @@ ul li a{
     }
 }
 @media screen and (max-width: 426px){
-    .active {
+    .active-nav-bar{
         width: 100vw;
     }
     .navigation {
@@ -102,6 +106,7 @@ ul li a{
 
 @media screen and (max-height: 625px){
     .side-bar{
+        padding: 35vh 0 0;
         overflow-y: auto;
     }
 }

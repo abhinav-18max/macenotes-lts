@@ -6,9 +6,6 @@ import Navigation from "../../components/navigation/navigation";
 import Social from "../../components/social/social";
 
 function Home() {
-  const activeSide = () => {
-    var element = document.getElementsByClassName("sidebar-active");
-  };
   return (
     <>
       <Navigation />
@@ -16,11 +13,9 @@ function Home() {
         <div className="land-top p-4">
           <h1 className="my-3">HEY THERE,</h1>
           <h3 className="my-2">Hitting the books last minute? We got you!</h3>
-          <button className="btn-1 btn my-2" onClick={activeSide}>
-            Go to Shelf
-          </button>
+          <button className="btn-1 btn my-2">Go to Shelf</button>
           <h5 className="my-2">
-            Remember to pay it forward too, You can share your notes here :&#41;
+            Remember to pay it forward too, You can share your notes here:&#41;
           </h5>
           <NavLink to="/contribute">
             <button className="btn-2 btn my-2">Contibute</button>

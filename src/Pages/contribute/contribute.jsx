@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import Navigation from "../../components/navigation/navigation";
+import Social from "../../components/social/social";
 
 const DocumentUploader = () => {
-  const [name, setName] = useState('');
+  const [name, setName] = useState("");
   const [file, setFile] = useState(null);
-  const [country, setCountry] = useState('');
+  const [country, setCountry] = useState("");
 
   const handleNameChange = (e) => {
     setName(e.target.value);
@@ -24,6 +26,7 @@ const DocumentUploader = () => {
 
   return (
     <div>
+      <Navigation />
       <h2>Document Uploader</h2>
       <form onSubmit={handleSubmit}>
         <label>
@@ -47,6 +50,7 @@ const DocumentUploader = () => {
         <br />
         <button type="submit">Submit</button>
       </form>
+      <Social />
     </div>
   );
 };

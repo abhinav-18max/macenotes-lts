@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import "./EEE.css";
 import Navigation from "../../components/navigation/navigation";
+import Social from "../../components/social/social";
 import DocGetter from "../../components/docGetter";
 
 let sem_3_sub = [
@@ -181,6 +182,7 @@ export default function EEE() {
 
   return (
     <section className="section">
+      <Navigation />
       <div>
         <h2>Electrical and Electronics Engineering</h2>
       </div>
@@ -245,6 +247,7 @@ export default function EEE() {
       <div className="note-display">
         {caller && <DocGetter module={mod} subject={sub} closer={close} />}
       </div>
+      <Social />
     </section>
   );
 }
