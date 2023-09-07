@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./navigation.css";
 import { NavLink } from "react-router-dom";
-import Home from "../../Pages/home/home";
+import Home from "../home/home";
 function Navigation() {
   const [nav, setNav] = useState(true);
   const nav_active = () => {
@@ -19,7 +19,7 @@ function Navigation() {
       </div>
 
       <div
-        className="side-bar px-2"
+        className="side-bar py-2"
         onMouseLeave={nav_active}
         onClick={nav_active}
       >

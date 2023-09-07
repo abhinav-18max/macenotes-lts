@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./home.css";
 import { NavLink } from "react-router-dom";
-import Navigation from "../../components/navigation/navigation";
-import Social from "../../components/social/social";
+import Navigation from "../navigation/navigation";
+import Social from "../social/social";
 
 function Home() {
   return (
