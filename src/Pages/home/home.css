@@ -3,12 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-.land-top {
+.land-top{
     width: 100vw;
     height: 55vh;
     padding-left: 9vw !important;
 }
-.land-top h1 {
+.land-top h1{
     color: var(--Secondary-Color, #547CF5);
     font-family: Poppins;
     font-size: 72px;
@@ -33,7 +33,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    width: 10vw;
+    width: 15vw;
     height: 7vh;
     transition: all 0.4s ease-in-out;
 }
@@ -59,7 +59,7 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
-    width: 10vw;
+    width: 15vw;
     height: 7vh;
     transition: all 0.4s ease-in-out;
 }
@@ -101,10 +101,13 @@
     line-height: normal;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 767px){
     .land-top h1{
         font-size: 55px;
         font-weight: 500;
+    }
+    .land-mid p{
+        font-size: 16px;
     }
 }
 @media screen and (max-width: 1024px){
@@ -123,19 +126,66 @@
     .btn-1{
         margin: 8px 0;
     }
-}
-
-@media screen and (max-height: 625px) {
-    .land-top h1{
-        font-size: 50px;
+    .land-mid{
+        padding: 1vh 7vw 1vh 9vw !important;
     }
-    .land-top h3{
+}
+@media screen and (max-width: 425px) {
+    .land-top h1 {
+        font-size: 40px;
+    }
+
+    .land-top h3 {
         font-size: 25px;
     }
-    .btn-1 , .btn-2{
+
+    .btn-1, .btn-2 {
+        font-size: 20px;
+        margin: 8px 0;
+    }
+    .land-top h5 {
         font-size: 18px;
     }
+    .land-mid {
+        padding: 1vh 7vw 1vh 9vw !important;
+    }
+}
+
+
+@media screen and (max-height: 625px) {
+    .land-top{
+        padding: 1vh !important;
+        padding-left: 9vw !important;
+    }
+    .land-top h1{
+        font-size: 40px;
+        margin: 9px 0 7px !important;
+    }
+    .land-top h3{
+        font-size: 20px;
+        margin: 7px 0 6px !important;
+    }
+    .btn-1 , .btn-2{
+        font-size: 15px;
+        margin: 7px 0 6px !important;
+    }
     .land-top h5{
-        font-size: 22px;
+        font-size: 14px;
+        margin: 7px 0 6px !important;
+    }
+
+    /*  */
+
+    .land-mid{
+        padding: 1vh 7vw 1vh 9vw !important;
+    }
+    .land-mid h2{
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .land-mid p{
+        font-size: 16px;
+        font-weight: 400;
+        padding: 1vh 0 !important;
     }
 }

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import "./pageModal.css";
-import Navigation from "../../components/navigation/navigation";
+import Navigation from "../navigation/navigation";
 import DocGetter from "../../components/docGetter";
 
 function Pagemodal(props) {
@@ -64,8 +64,8 @@ function Pagemodal(props) {
     for (var i = 7; i < 11; i++) {
       var y = "sub" + (i + 1);
       const sub = document.getElementById(y);
-      if (x[i] == "") sub.style.display='none';
-      else sub.style.display='block';
+      if (x[i] == "") sub.style.display = "none";
+      else sub.style.display = "block";
     }
   });
   return (
@@ -81,8 +81,18 @@ function Pagemodal(props) {
             onClick={() => {
               callerUp(false);
               subSetter(
-                props.sem3[0],props.sem3[1],props.sem3[2],props.sem3[3],props.sem3[4],props.sem3[5],props.sem3[6],props.sem3[7],
-                props.sem3[8],props.sem3[9],props.sem3[10],"sem3"
+                props.sem3[0],
+                props.sem3[1],
+                props.sem3[2],
+                props.sem3[3],
+                props.sem3[4],
+                props.sem3[5],
+                props.sem3[6],
+                props.sem3[7],
+                props.sem3[8],
+                props.sem3[9],
+                props.sem3[10],
+                "sem3"
               );
             }}
           >
@@ -94,8 +104,18 @@ function Pagemodal(props) {
             onClick={() => {
               callerUp(false);
               subSetter(
-                props.sem4[0],props.sem4[1],props.sem4[2],props.sem4[3],props.sem4[4],props.sem4[5],props.sem4[6],props.sem4[7],
-                props.sem4[8],props.sem4[9],props.sem4[10],"sem4"
+                props.sem4[0],
+                props.sem4[1],
+                props.sem4[2],
+                props.sem4[3],
+                props.sem4[4],
+                props.sem4[5],
+                props.sem4[6],
+                props.sem4[7],
+                props.sem4[8],
+                props.sem4[9],
+                props.sem4[10],
+                "sem4"
               );
             }}
           >
@@ -107,8 +127,17 @@ function Pagemodal(props) {
             onClick={() => {
               callerUp(false);
               subSetter(
-                props.sem5[0],props.sem5[1],props.sem5[2],props.sem5[3],props.sem5[4],props.sem5[5],props.sem5[6],props.sem5[7],
-                props.sem5[8],props.sem5[9],props.sem5[10],
+                props.sem5[0],
+                props.sem5[1],
+                props.sem5[2],
+                props.sem5[3],
+                props.sem5[4],
+                props.sem5[5],
+                props.sem5[6],
+                props.sem5[7],
+                props.sem5[8],
+                props.sem5[9],
+                props.sem5[10],
                 "sem5"
               );
             }}
@@ -121,9 +150,17 @@ function Pagemodal(props) {
             onClick={() => {
               callerUp(false);
               subSetter(
-                props.sem6[0],props.sem6[1],props.sem6[2],props.sem6[3],props.sem6[4],props.sem6[5],props.sem6[6],props.sem6[7],
-                props.sem6[8],props.sem6[9],props.sem6[10]
-               ,
+                props.sem6[0],
+                props.sem6[1],
+                props.sem6[2],
+                props.sem6[3],
+                props.sem6[4],
+                props.sem6[5],
+                props.sem6[6],
+                props.sem6[7],
+                props.sem6[8],
+                props.sem6[9],
+                props.sem6[10],
                 "sem6"
               );
             }}
@@ -136,9 +173,17 @@ function Pagemodal(props) {
             onClick={() => {
               callerUp(false);
               subSetter(
-                props.sem7[0],props.sem7[1],props.sem7[2],props.sem7[3],props.sem7[4],props.sem7[5],props.sem7[6],props.sem7[7],
-                props.sem7[8],props.sem7[9],props.sem7[10]
-               ,
+                props.sem7[0],
+                props.sem7[1],
+                props.sem7[2],
+                props.sem7[3],
+                props.sem7[4],
+                props.sem7[5],
+                props.sem7[6],
+                props.sem7[7],
+                props.sem7[8],
+                props.sem7[9],
+                props.sem7[10],
                 "sem7"
               );
             }}
@@ -151,9 +196,18 @@ function Pagemodal(props) {
             onClick={() => {
               callerUp(false);
               subSetter(
-                props.sem8[0],props.sem8[1],props.sem8[2],props.sem8[3],props.sem8[4],props.sem8[5],props.sem8[6],props.sem8[7],
-                props.sem8[8],props.sem8[9],props.sem8[10]
-               ,"sem8"
+                props.sem8[0],
+                props.sem8[1],
+                props.sem8[2],
+                props.sem8[3],
+                props.sem8[4],
+                props.sem8[5],
+                props.sem8[6],
+                props.sem8[7],
+                props.sem8[8],
+                props.sem8[9],
+                props.sem8[10],
+                "sem8"
               );
             }}
           >
@@ -162,9 +216,16 @@ function Pagemodal(props) {
         </div>
       </header>
       <section className="sec">
-        <Container >
-          <Row >
-            <Col md={4} style={{ justifyContent:"center", alignItems:"center",display:"inline" }}>
+        <Container>
+          <Row>
+            <Col
+              md={4}
+              style={{
+                justifyContent: "center",
+                alignItems: "center",
+                display: "inline",
+              }}
+            >
               <Card className="contents" id="sub1">
                 <Card.Header>
                   <h6>{firstsub}</h6>
@@ -934,7 +995,6 @@ function Pagemodal(props) {
           </Row>
         </Container>
       </section>
-      
     </div>
   );
 }

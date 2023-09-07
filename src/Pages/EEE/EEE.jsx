@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import "./EEE.css";
-import Navigation from "../../components/navigation/navigation";
-import Social from "../../components/social/social";
+import Navigation from "../navigation/navigation";
+import Social from "../social/social";
 import DocGetter from "../../components/docGetter";
 
 let sem_3_sub = [
