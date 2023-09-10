@@ -13,7 +13,9 @@ h2{
 .sem-nav{
     list-style: none;
     display: flex;
+
     flex-wrap: wrap;
+    width: 100dvw;
     gap: .25em;
     padding: 0;
 
