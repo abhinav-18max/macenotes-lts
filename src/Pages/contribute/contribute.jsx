@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import Navigation from "../../components/navigation/navigation";
-import Social from "../../components/social/social";
+import Navigation from "../navigation/navigation";
+import Social from "../social/social";
 
 const DocumentUploader = () => {
   const [name, setName] = useState("");
