@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Navigation from "../navigation/navigation";
 import Social from "../social/social";
 
 const DocumentUploader = () => {
@@ -26,7 +25,6 @@ const DocumentUploader = () => {
 
   return (
     <div>
-      <Navigation />
       <h2>Document Uploader</h2>
       <form onSubmit={handleSubmit}>
         <label>

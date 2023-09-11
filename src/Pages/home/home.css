@@ -1,4 +1,4 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -75,7 +75,7 @@
 
 
 
-/*  */
+
 .land-mid{
     width: 100vw;
     height: 35vh;
@@ -174,7 +174,7 @@
         margin: 7px 0 6px !important;
     }
 
-    /*  */
+
 
     .land-mid{
         padding: 1vh 7vw 1vh 9vw !important;
@@ -187,5 +187,105 @@
         font-size: 16px;
         font-weight: 400;
         padding: 1vh 0 !important;
+    }
+} */
+
+
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+.home-page{
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    display: grid;
+    grid-template-columns: auto auto;
+    background: #191919;
+}
+
+
+.home-items{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.macenotes{
+    color: #FFF;
+    font-family: Michroma;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.macenotes span{
+    color: #12DEA1;
+}
+
+.search {
+    background-image: radial-gradient(circle, 
+        #12dea1, #00df8a, #00e06f, 
+        #00df4c, #1bde12) !important;
+}
+.search a{
+    background-color: transparent;
+    text-decoration: none;
+    color: white;
+}
+
+select, .search {
+    width: 25vw;
+    /* height: 8vh; */
+    border: 5px solid #12DEA1;
+    border-radius: 30px;
+    background: #131313;
+    color: #FFF;
+    text-align: center;
+    font-family: League Spartan;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 1vh 1vw;
+    margin: 0.3vh 0;
+}
+.options{
+    
+}
+option {
+    font-size: 25px;
+    color: #12DEA1;
+    text-align: center;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .home-page{
+        display: block;
+    }
+    .home-items{
+        height: 50vh;
+        justify-content: center;
+    }
+    .macenotes{
+        font-size: 100px;
+    }
+    select, .search{
+        width: 50vw;
+    }
+    option {
+        font-size: 20px;
+        color: #12DEA1;
     }
 }
