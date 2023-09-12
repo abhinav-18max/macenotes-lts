@@ -257,9 +257,9 @@ select, .search {
     padding: 1vh 1vw;
     margin: 0.3vh 0;
 }
-.options{
+/* .options{
     
-}
+} */
 option {
     font-size: 25px;
     color: #12DEA1;

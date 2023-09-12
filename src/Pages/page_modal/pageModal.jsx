@@ -5,14 +5,13 @@ import Navigation from "../navigation/navigation";
 import DocGetter from "../../components/docGetter";
 
 function Pagemodal(props) {
-  
-  const firstsub=props.sem[0];
+  const firstsub = props.sem[0];
   const secondsub = props.sem[1];
   const thirdsub = props.sem[2];
   const fourthsub = props.sem[3];
   const fifthsub = props.sem[4];
   const sixthsub = props.sem[5];
-  const seventhsub= props.sem[6];
+  const seventhsub = props.sem[6];
   const eighthsub = props.sem[7];
   const ninthsub = props.sem[8];
   const tenthsub = props.sem[9];
@@ -24,7 +23,7 @@ function Pagemodal(props) {
   function close() {
     callerUp(false);
   }
-  
+
   useEffect(() => {
     const x = [
       firstsub,
@@ -51,7 +50,6 @@ function Pagemodal(props) {
       <Navigation />
       <header className="text py-5">
         <h1 className="heading py-3">{props.heading}</h1>
-       
       </header>
       <section className="sec">
         <Container>

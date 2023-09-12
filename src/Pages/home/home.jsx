@@ -4,8 +4,6 @@ import "./home.css";
 import { NavLink } from "react-router-dom";
 import Navigation from "../navigation/navigation";
 import Navigationbar from "../navigationbar/navigationbar";
-import Pagemodal from "../page_modal/pageModal";
-import data from "../data/sems.json";
 import Social from "../social/social";
 
 function Home() {
@@ -85,7 +83,7 @@ function Home() {
             )}
 
             <button className="search my-1">
-              <NavLink to="/pageModel">Search</NavLink>
+              <NavLink to={"/" + selectedCourse}>Search</NavLink>
             </button>
           </div>
         </section>
