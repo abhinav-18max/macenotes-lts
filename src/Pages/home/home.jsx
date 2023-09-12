@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./home.css";
 import { NavLink } from "react-router-dom";
-import Navigation from "../navigation/navigation";
 import Navigationbar from "../navigationbar/navigationbar";
 import Social from "../social/social";
 
@@ -41,7 +40,6 @@ function Home() {
   return (
     <>
       <section className="landing-page">
-        <Navigation />
         <Navigationbar />
         <section className="home-page">
           <div className="home-items">

@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
 import "./pageModal.css";
-import Navigation from "../navigation/navigation";
-import DocGetter from "../../components/docGetter";
 
 function Pagemodal(props) {
   const firstsub = props.sem[0];
@@ -47,7 +45,6 @@ function Pagemodal(props) {
   });
   return (
     <div>
-      <Navigation />
       <header className="text py-5">
         <h1 className="heading py-3">{props.heading}</h1>
       </header>

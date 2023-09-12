@@ -3,7 +3,6 @@ import "./navigationbar.css";
 import { NavLink } from "react-router-dom";
 import { VscMenu } from "react-icons/vsc";
 import { FaXmark } from "react-icons/fa6";
-import DocumentUploader from "../contribute/contribute";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function Navigationbar() {
@@ -28,7 +27,7 @@ function Navigationbar() {
         <div className="navbar">
           <div className="nav-bar logo">LOGO</div>
           <div className="nav-bar contibute px-4 py-2">
-            <NavLink to="/contribute">CONTRIBUTE</NavLink>
+            <NavLink to="">CONTRIBUTE</NavLink>
           </div>
           <div className="navbar home-about">
             <div className="ms-4 home nav-bar">HOME</div>
