@@ -5,7 +5,7 @@ function CS() {
   const sem = "semester 3";
   return (
     <>
-      <Pagemodal sem={data["cs"][sem]} heading="Subjects" />
+      <Pagemodal sem={data["Computer Science"][sem]} heading="Subjects" />
     </>
   );
 }

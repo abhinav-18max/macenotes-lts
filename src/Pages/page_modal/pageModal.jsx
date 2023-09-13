@@ -14,7 +14,7 @@ function Pagemodal(props) {
   const ninthsub = props.sem[8];
   const tenthsub = props.sem[9];
   const eleventhsub = props.sem[10];
-
+  console.log(props.sem);
   const [sub, setsub] = useState(props.sem[0]);
   const [mod, setmod] = useState("MODULE 1");
   const [caller, callerUp] = useState(false);
