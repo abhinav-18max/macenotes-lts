@@ -68,7 +68,7 @@ function Home() {
               {selectedCourse != "First Year" && (
                 <div>
                   <select
-                    id="semster"
+                    id="semester"
                     value={selectedSemester}
                     onChange={handleChangeSemester}
                     required
