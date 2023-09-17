@@ -1,73 +1,50 @@
+*{
+    --clr-primary: #12DEA1;
+}
 
-.mods
-{
-    text-decoration: none;
-    background: rgba(0, 0, 0, 0);
-    color: white;
-    border: none;
+.mainHeading h1{
+    padding-top: 2rem;
+    color : transparent;
+    background: linear-gradient(to right,rgb(205, 194, 194),var(--clr-primary));
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: clamp(2rem,4vw,5rem);
+    text-align: center;
 }
-.mods:hover
-{
-    /* box-shadow: -4px 0px 4px 0px rgba(255, 255, 255, 0.25), 4px 0px 4px 0px rgba(255, 255, 255, 0.25), 0px -4px 4px 0px rgba(255, 255, 255, 0.25), 0px 4px 4px 0px rgba(255, 255, 255, 0.25); */
-    border-bottom: solid  #547CF5 2px;
-}
-.text {
-    position: absolute;
-    margin-left: 50px;
 
+.contents{
+    background: #131313;
+    color:#eee;
+    padding: 1em;
+    border-radius: 3vw;
+    box-shadow: inset -4px 0px 0px var(--clr-primary);
 }
-.heading
-{
-    color: #547CF5;
+
+.contents h6{
+    font-size: clamp(
+        1.1rem, 1vw , 2.5rem
+    );
 }
- .sems
-{
-    display:inline-flex;
+
+.contents ul{
+    list-style: none;
+    padding: 0;
+}
+
+.mods{
+    padding: .5em;
     justify-content: center;
     align-items: center;
-    text-decoration: none;
-    border-style: solid;
-    border-radius: 20px;
-    height: 40px;
-    width: 146px;
-    font-weight: bold;
-    font-size:18px;
-     margin-right: 7px;
-    margin-top: 8px; 
-    border-color: #547CF5;
-    color: #547CF5;
-    background-color: rgba(0, 0, 0, 0);
-} 
- /* .sems:hover
-{
-    background-color:#547CF5 ;
-    color: rgb(0, 0, 0);
-}  */
-
-.sec
-{
-    position: relative;
-    top:350px;
 }
 
-.contents
-{
-    color: white;
-    
-    /* width: 55%; */
-    background-color: rgb(26, 26, 26);
-    border-right:solid 6px blue;
-    margin-top: 10px;
-    
-    box-shadow: 6px 4px 4px 0px rgba(0, 0, 0, 0.50);
-width: 310px;
-height: 300px;
+.arr{
+    color: var(--clr-primary);
 }
 
-@media (max-width:360px)
-{
-    .sec{
-        position: relative;
-    top:500px;
-    }
+.mods:hover{
+    background: var(--clr-primary);
+}
+
+.mods:hover .arr{
+    color: #eee;
 }

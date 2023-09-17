@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./home.css";
 import Pagemodal from "../page_modal/pageModal";
+import Footer from "../../components/footer/footer";
 import data from "../data/sems.json";
 import Navigationbar from "../navigationbar/navigationbar";
 import Social from "../social/social";
+import { FaArrowLeftLong } from "react-icons/fa6";
 
 function Home() {
   const [selectedSemester, setSelectedSemester] = useState("");
@@ -99,7 +101,7 @@ function Home() {
               </button>
             </div>
           </section>
-          <Social />
+          <Footer />
         </section>
       </>
     );
@@ -107,11 +109,13 @@ function Home() {
   return (
     <>
       <div>
-        <button onClick={() => setCourseActive(false)}>back</button>
+        <button className="Back-btn" onClick={() => setCourseActive(false)}>
+          <FaArrowLeftLong className="arrow" />
+        </button>
       </div>
       <Pagemodal
         sem={data[selectedCourse][selectedSemester]}
-        heading="Subjects"
+        heading={selectedCourse + "  -  " + selectedSemester}
       />
     </>
   );

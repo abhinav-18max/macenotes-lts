@@ -8,8 +8,9 @@
     top: 0;
     left: 0;
     width: 100vw !important;
+    font-family: 'League Spartan', sans-serif;
     height: max-content;
-    background: linear-gradient(-90deg, #12dea166 0% , #00000000 100% );
+    background: linear-gradient(-90deg, #12dea1d7 0% , #00000000 100% );
 }
 .navbar{
     display: flex;
@@ -22,7 +23,6 @@
 .contibute{
     margin-left: 20vh;
     color: #FFF;
-    font-family: League Spartan;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -32,7 +32,6 @@
 }
 .contibute a{
     color: #FFF;
-    font-family: League Spartan;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -41,7 +40,6 @@
 }
 .home, .about, .logo{
     color: #FFF;
-    font-family: League Spartan;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;

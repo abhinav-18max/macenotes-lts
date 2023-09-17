@@ -2,3 +2,9 @@
 {
     display: none;
 }
+
+body{
+    background: url('../public/bg.png');
+    font-family: 'Michroma', sans-serif;
+
+}
